@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFREI - Contact</title>
+    <link rel="icon" type="image/png" href="../img/logonav.png"> 
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <source src="../img/background2.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <header>
+        <div class="logo-container slide-from-left">
+            <img src="../img/logo1.png" alt="Logo EFREI Paris" class="logo">
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+        <nav class="main-nav slide-from-right">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="Faculty.html">Faculty</a></li>
+                <li><a href="Contact.html" class="active btn-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-wrapper contact-page">
+        <section class="contact-hero slide-from-bottom">
+            <h1 class="courses-main-title">Get in Touch</h1>
+            <p class="section-subtitle">Select the department you wish to contact for a faster response.</p>
+        </section>
+
+        <section class="contact-container slide-from-bottom" style="animation-delay: 0.2s;">
+            <div class="contact-info">
+                <div class="info-block">
+                    <h3>Campus République</h3>
+                    <p>30-32 Av. de la République<br>94800, Villejuif</p>
+                </div>
+                <div class="info-block">
+                    <h3>Main Services</h3>
+                    <ul>
+                        <li><strong>IT Support:</strong> service.informatique@efrei.fr</li>
+                        <li><strong>Schooling:</strong> scolarite@efrei.fr</li>
+                        <li><strong>Housing:</strong> logement@efrei.fr</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form id="efrei-contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Student Email</label>
+                        <input type="email" id="email" name="email" placeholder="email@efrei.net" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="department">Department</label>
+                        <select id="department" name="department" required>
+                            <option value="" disabled selected>Choose a service...</option>
+                            <option value="it">IT Service (Technical Support)</option>
+                            <option value="scolarity">Student Services (Scolarité)</option>
+                            <option value="exams">Examination Office (Examens)</option>
+                            <option value="planning">Planning Office (Emploi du temps)</option>
+                            <option value="funding">Funding & Grants (Bourses)</option>
+                            <option value="housing">Housing Service (Logement)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-main">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-info">
+            <p>&copy; 2026 Efrei. All rights reserved. <a href="About.html" class="about-link">About the project</a></p>
+        </div>
+        <div class="footer-brand-text"><h2 class="footer-efrei-title">EFREI</h2></div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
