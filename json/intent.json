@@ -1,0 +1,44 @@
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": ["hello", "hi", "hey", "good morning", "good afternoon", "greetings", "howdy"],
+      "responses": ["Hello! How can I help you discover EFREI today?", "Hi there! Do you have any questions about our programs or campus?"]
+    },
+    {
+      "tag": "programs",
+      "patterns": ["courses", "programs", "bachelor", "master", "engineering cycle", "degree", "majors", "specializations", "study", "what do you teach"],
+      "responses": ["We offer an Engineering Program, various Bachelors, and Specialized Master's degrees. You can check out the 'Courses' tab for detailed tracks like Data Science, Cybersecurity, or Software Engineering!"]
+    },
+    {
+      "tag": "contact",
+      "patterns": ["contact", "email", "phone", "address", "where are you located", "campus location", "reach out", "help desk"],
+      "responses": ["You can find us at Campus République, 30-32 Av. de la République, 94800 Villejuif. Feel free to use the form on the 'Contact' page to reach specific departments like IT Support or Student Services!"]
+    },
+    {
+      "tag": "admissions",
+      "patterns": ["how to apply", "admission", "requirements", "enroll", "join efrei", "registration", "application process"],
+      "responses": ["Admissions depend on your current academic level. We accept post-high school applications as well as parallel admissions. Please reach out to our admissions team via the contact form for specific requirements."]
+    },
+    {
+      "tag": "student_life",
+      "patterns": ["student life", "associations", "clubs", "campus life", "activities", "sports", "events"],
+      "responses": ["EFREI has a vibrant student life with dozens of associations, including tech clubs, sports teams, and arts societies. Our campus also features state-of-the-art labs and a great environment to thrive!"]
+    },
+    {
+      "tag": "apprenticeship",
+      "patterns": ["internship", "apprenticeship", "work-study", "alternance", "companies", "professional", "jobs"],
+      "responses": ["Yes! Many of our programs, including the Engineering cycle and Master's degrees, can be completed as an apprenticeship (work-study). We maintain strong partnerships with top tech companies to help you launch your career."]
+    },
+    {
+      "tag": "about",
+      "patterns": ["what is efrei", "about the school", "who are you", "school reputation", "ranking", "why efrei"],
+      "responses": ["EFREI is a top-tier generalist digital engineering school. Our mission is to shape engineers' minds for the future through cutting-edge technologies and boundless expertise."]
+    },
+    {
+      "tag": "goodbyes",
+      "patterns": ["bye", "goodbye", "see you", "thanks", "thank you", "that's all", "perfect"],
+      "responses": ["You're very welcome! Have a great day and we hope to see you at EFREI soon!", "Goodbye! Don't hesitate to ask if you need anything else."]
+    }
+  ]
+}
