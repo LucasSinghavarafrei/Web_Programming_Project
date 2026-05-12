@@ -185,3 +185,98 @@ header {
 .form-group select option { background: #1a1a1a; color: #fff; }
 .contact-form-wrapper .btn-main { width: 100%; cursor: pointer; border: none; margin-top: 1rem; }
 @media screen and (max-width: 850px) { .contact-container { flex-direction: column; padding: 2rem; } .contact-info { order: 2; } .contact-form-wrapper { order: 1; } }
+
+/* =========================================
+   PAGE CHATBOT
+========================================= */
+
+.chatbot-full-page {
+    padding: 180px 2rem 4rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.chatbot-window {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+}
+
+#chat-box {
+    height: 500px; /* Plus grand pour la page dédiée */
+    overflow-y: auto;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* On garde les styles des bulles p.bot et p.user précédents */
+#chat-box p.bot { background: rgba(255, 255, 255, 0.1); color: #fff; align-self: flex-start; border-radius: 12px 12px 12px 2px; }
+#chat-box p.user { background: #fff; color: #000; align-self: flex-end; border-radius: 12px 12px 2px 12px; font-weight: 600; }
+
+/* 1. Centrer le texte d'introduction au-dessus de la boîte */
+.chatbot-hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.chatbot-hero p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+}
+.chatbot-hero h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* 2. Style de base pour toutes les bulles de discussion */
+#chat-box p {
+    padding: 1rem 1.5rem;
+    max-width: 80%;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    margin: 0; /* Enlève les marges par défaut pour un rendu plus propre */
+}
+
+/* 3. Réparer la barre de saisie (input) et le fond en bas */
+.chatbot-input-area {
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#user-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 1.5rem;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    outline: none; /* Enlève la bordure bleue quand on clique dessus */
+}
+
+/* 4. Réparer le bouton "Send" pour qu'il matche ton design Efrei */
+#send-btn {
+    background: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 0 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#send-btn:hover {
+    background: #e0e0e0;
+}
